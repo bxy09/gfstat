@@ -1,12 +1,12 @@
 package metric_test
 
 import (
+	"github.com/bxy09/gfstat/metric"
+	"github.com/bxy09/gfstat/performance"
 	"math"
 	"math/rand"
 	"testing"
 	"time"
-	"github.com/bxy09/gfstat/metric"
-	"github.com/bxy09/gfstat/performance"
 )
 
 func TestIdentity(t *testing.T) {

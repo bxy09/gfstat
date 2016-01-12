@@ -17,6 +17,7 @@ func init() {
 	MetricMap["SpecificRisk"] = SpecificRisk
 	MetricMap["SystematicRisk"] = SystematicRisk
 	MetricMap["TotalRisk"] = TotalRisk
+	MetricMap["Beta"] = Beta
 }
 
 func ActivePremium(c MetricCalculator) (float64, error) {
@@ -118,6 +119,11 @@ func AlphaBeta(c MetricCalculator) (alpha, beta float64, err error) {
 		return
 	}
 	return
+}
+
+func Beta(c MetricCalculator) (float64, error) {
+	_, b, err := AlphaBeta(c)
+	return b, err
 }
 
 func JensenAlpha(c MetricCalculator) (float64, error) {

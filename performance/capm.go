@@ -1,8 +1,8 @@
 package performance
 
 import (
-	"github.com/bxy09/gfstat/performance/utils"
 	"github.com/GaryBoone/GoStats/stats"
+	"github.com/bxy09/gfstat/performance/utils"
 	"math"
 )
 
